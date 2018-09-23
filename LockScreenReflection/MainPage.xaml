@@ -1,0 +1,23 @@
+﻿<Page x:Class="LockScreenReflection.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:LockScreenReflection"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d" Height="158" Width="310">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <Button x:Name="ChangeBackgroundButton"
+                    Content="Random Desktop Background"
+                    Click="ChangeBackgroundButton_Click" />
+            <ProgressRing x:Name="progressRing" />
+
+            <Button x:Name="ChangeBackgroundButton2"
+                    Content="Lock Screen Background"
+                    Click="LockScreenBackgroundButton_Click" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Width="219" />
+            <ProgressRing x:Name="lockScreenBackgroundProgressRing" />
+        </StackPanel>
+    </Grid>
+</Page>
